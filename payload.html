@@ -36,12 +36,14 @@ function done()
 {
     if(main_ret == 0 || main_ret == 179)
     {
-        alert("You're all set!");
+        alert("PS4 Jailbreak loaded !\nPress OK now");
         read_ptr_at(0);
     }
-    else
-        alert("Jailbreak failed! Reboot your PS4 and try again.");
-}
+    if(main_ret != 1)
+    {
+       alert("PS4 Jailbreak Failed. Non-Handled Code Returned! Reboot your PS4 and try again.");
+    }
+ }
 
 window.midExploit = function()
 {
@@ -52,6 +54,8 @@ window.midExploit = function()
     if('p1' in params)
         scripts.push(params.p1);
     scripts.push('netcat.js');
+    if('p2' in params)
+    scripts.push(params.p2);
     preloadScripts(scripts, go);
 }
 
