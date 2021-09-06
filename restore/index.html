@@ -1,5 +1,5 @@
 <html><head>
-<title>Restore USB 75XV3b4 AUTO EXPLOIT ( 7.50-7.55 FW )</title>
+<title>Restore V1.12(B7) Auto Mode Exploit ( 7.50-7.55 FW )</title>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8"><style>
     body{color: white; background-color: black; background-attachment:fixed; background-size:100%; background-repeat:no-repeat;
         }</style>
@@ -29,7 +29,7 @@ function done()
 {
     if(main_ret == 0 || main_ret == 179)
     {
-        alert("75XV3b4 Auto JB Restore loaded !\nPress OK now");
+        alert("Manual JB Restore loaded !\nPress OK now");
         read_ptr_at(0);
     }
     if(main_ret != 1)
@@ -39,7 +39,7 @@ function done()
  }
 
 window.midExploit = function() {
-  var scripts = ['./blob.js', './jb.js', './mira.js', './75XV3b4CacheInstall.js', './netcat.js'];
+  var scripts = ['./blob.js', './jb.js', './mira.js', './CacheInstall.js', './netcat.js'];
 
   if (fwFromUA != "750" && fwFromUA != "751" && fwFromUA != "755") {
     die('Unsupported Firmware!');
