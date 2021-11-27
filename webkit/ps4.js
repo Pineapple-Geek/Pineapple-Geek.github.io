@@ -216,6 +216,9 @@ function toggle_payload(pld){
 	}else if(pld == "goldhen10"){
 		document.getElementById("progress").innerHTML="Loading GoldHen V1.0.. Please wait..";
 		preloadScripts(['payloads/preloader.js', 'payloads/goldhen10.js', 'payloads/loader.js']);
+	}else if(pld == "goldhen20b"){
+		document.getElementById("progress").innerHTML="Loading GoldHen V2.0b.. Please wait..";
+		preloadScripts(['payloads/preloader.js', 'payloads/goldhen20b.js', 'payloads/loader.js']);
 	}else if(pld == "webrte"){
 		document.getElementById("progress").innerHTML="Loading Payload.. Please wait..";
 		preloadScripts(['payloads/preloader.js', 'payloads/webrte.js', 'payloads/loader.js']);
